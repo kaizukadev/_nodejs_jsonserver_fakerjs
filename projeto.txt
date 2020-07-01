@@ -1,4 +1,4 @@
-xx:xx de 31:20
+25:00 de 31:20
 
 npm init -y
 npm i faker

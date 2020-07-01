@@ -15,11 +15,11 @@ const tipo      = faker.name.jobType();
 const desc      = faker.name.jobDescriptor();
 const telefone  = faker.phone.phoneNumber();
 
-console.log(`Nome Completo: ${nomeC}`);
-console.log(`Nome Completo: ${nome} ${sobrenome}`);
-console.log(`Cargo........: ${cargo}`);
-console.log(`Área.........: ${area}`);
-console.log(`Tipo.........: ${tipo}`);
-console.log(`Descrição....: ${desc}`);
-console.log(`Telefone.....: ${telefone}`);
+console.log(`Nome Completo 1: ${nomeC}`);
+console.log(`Nome Completo 2: ${nome} ${sobrenome}`);
+console.log(`Cargo..........: ${cargo}`);
+console.log(`Área...........: ${area}`);
+console.log(`Tipo...........: ${tipo}`);
+console.log(`Descrição......: ${desc}`);
+console.log(`Telefone.......: ${telefone}`);
 
