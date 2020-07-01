@@ -3,6 +3,7 @@ const fs = require('fs');
 
 function generateUsers(start, end) {
     let users = [];
+    let cars = [];
     for (let id = start; id <= end; id++) {
         const nome      = faker.name.firstName();
         const sobrenome = faker.name.lastName();
@@ -19,7 +20,7 @@ function generateUsers(start, end) {
             cargo: cargo
         });
     }
-    return { data: users };
+    return { data: users, cars };
 }
 
 const genData = generateUsers(1, 100);

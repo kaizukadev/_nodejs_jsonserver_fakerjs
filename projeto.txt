@@ -2,3 +2,11 @@
 
 npm init -y
 npm i faker
+npm install json-server
+
+npm run server
+
+http://localhost:3000/data?sobrenome=Saraiva
+http://localhost:3000/data?id=10&id=20
+
+
