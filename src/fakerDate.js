@@ -5,8 +5,8 @@ Future   faker.date.future(years, refDate)
 Between  faker.date.between(Date1,Date2)
 Recent   faker.date.recent(days)
 */
-const faker = require('faker');
 
+const faker = require('faker');
 faker.locale = 'pt_BR';
 
 const diaDaSemana = faker.date.weekday();

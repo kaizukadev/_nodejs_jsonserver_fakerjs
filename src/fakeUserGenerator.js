@@ -3,7 +3,6 @@ const fs = require('fs');
 
 function generateUsers(start, end) {
     let users = [];
-    let cars = [];
     for (let id = start; id <= end; id++) {
         const nome      = faker.name.firstName();
         const sobrenome = faker.name.lastName();
@@ -20,7 +19,25 @@ function generateUsers(start, end) {
             cargo: cargo
         });
     }
-    return { data: users, cars };
+
+    const cars = ['Audi', 'BMW', 'Mercedes', 'Porsche', 'Volkswagen'];
+    let estoque = [];
+    for (let id = 1; id <= cars.length; id++) {
+        const marca     = cars[id-1];
+        const uuid      = faker.random.uuid();
+        const quant     = faker.random.number({min:2, max:10});
+        const disp      = faker.random.boolean();
+
+        estoque.push({
+            id: id,
+            marca: marca,
+            uuid: uuid,
+            quant: quant,
+            disp: disp
+        });
+    }
+
+    return { data: users, estoque };
 }
 
 const genData = generateUsers(1, 100);

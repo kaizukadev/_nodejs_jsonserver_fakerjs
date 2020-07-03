@@ -31,7 +31,3 @@ console.log(`Sequência alfanumérica de 6 caracteres: ${alfaNumerico}`);
 console.log(`UUID..................................: ${uuid}`);
 console.log(`Palavra...............................: ${palavra}`);
 console.log(`Palavras aleatórias ..................: ${palavras}`);
-
-console.log(`UUID..................................: ${faker.image.image()}`);
-console.log(`Palavra...............................: ${faker.image.avatar()}`);
-console.log(`Palavras aleatórias ..................: ${faker.image.food()}`);

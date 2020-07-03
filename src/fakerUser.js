@@ -3,7 +3,6 @@ https://github.com/Marak/faker.js/wiki/Person
 */
 
 const faker = require('faker');
-
 faker.locale = 'pt_BR';
 
 const nomeC     = faker.name.findName();
